@@ -35,7 +35,7 @@ UNAME 				:= 	$(shell uname)
 ifeq ($(UNAME), Darwin)
   INSTALL_PREFIX		=	/usr/local
 else
-  INSTALL_PREFIX		=	/usr
+  INSTALL_PREFIX		=	/usr/local
 endif
 
 INSTALL_HEADERS			=	${INSTALL_PREFIX}/include
