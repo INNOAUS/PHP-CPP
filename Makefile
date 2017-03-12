@@ -171,7 +171,8 @@ release: COMPILER_FLAGS +=	-O2
 release: LINKER_FLAGS	+=  -O2
 release: phpcpp
 
-phpcpp: ${PHP_SHARED_LIBRARY} ${PHP_STATIC_LIBRARY}
+#phpcpp: ${PHP_SHARED_LIBRARY} ${PHP_STATIC_LIBRARY}
+phpcpp: ${PHP_STATIC_LIBRARY}
 	@echo
 	@echo "Build complete."
 
